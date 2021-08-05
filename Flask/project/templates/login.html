@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %} Login-Page {% endblock  title %}
+
+{% block body %}
+<h2 align = 'center' class="my-3">Please Login </h2>
+<form method="POST">
+    <div class="mb-3 my-5">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" name = "email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" name="password" id="exampleInputPassword">
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+
+  <div class="container my-3">
+      <p>New User?</p>
+      <a href="/sign-up">Click Here to Create new Account</a>
+  </div>
+{% endblock %}

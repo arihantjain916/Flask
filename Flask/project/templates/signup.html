@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %} Sign-Up  {% endblock  title %}
+
+{% block body %}
+<h2 align = 'center'>Please Sign Up</h2>
+<form method="POST">
+    <div class="mb-3 my-5">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="name" class="form-label">Your Name</label>
+      <input type="text" class="form-control" id="name" name='name' aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="telephone" class="form-label">Contact Number</label>
+        <input type="tel" class="form-control" name="telephone" id="telephone">
+      </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" name="password1" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Confirm your Password</label>
+      <input type="password" class="form-control" name="password2" id="exampleInputPassword2">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+{% endblock %}
